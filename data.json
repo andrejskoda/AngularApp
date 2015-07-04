@@ -1,0 +1,16 @@
+[{
+  "id": 1,
+  "userId": 1,
+  "firstName": ["Jack", "text"],
+  "lastName": ["Rackum", "text"]
+},{
+  "id": 2,
+  "userId": 2,
+  "firstName": ["Ellery", "text"],
+  "lastName": ["Queen", "text"]
+},{
+  "id": 3,
+  "userId": 3,
+  "firstName": ["Maria", "text"],
+  "lastName": ["Quinn", "text"]
+}]
