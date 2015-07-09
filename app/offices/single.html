@@ -1,1 +1,37 @@
-<h2> {{office.DisNameLang}} {{office.DisOrt}}</h2>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2> {{office.DisNameLang}}</h2>
+        <p>{{office.DisOeffnung}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <img ng-src="{{office.DisFotoUrl}}" alt="Description" />
+    </div>
+
+    <div class="col-md-4">
+        <ul>
+            <li>{{office.DisPlz}} {{office.DisOrt}}</li>
+            <li>{{office.DisStrasse}}</li>
+            <li>{{office.DisTel}}</li>
+        </ul>
+    </div>
+
+    <div class="col-md-4">
+        <map center="{{office.DisLatitude}}, {{office.DisLongitude}}" zoom="15">
+            <info-window position="{{office.DisLatitude}}, {{office.DisLongitude}}" visible="true">
+                <span>{{office.DisStrasse}}</span>
+            </info-window>
+        </map>
+        <!--
+        <map center="-34.397, 150.644" zoom="1"></map>
+
+        -->
+    </div>
+</div>
+
+<div class="row">
+
+</div>

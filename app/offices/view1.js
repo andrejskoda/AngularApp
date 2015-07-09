@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute','ngResource','myApp'])
+angular.module('myApp.view1', ['ngRoute','ngResource','myApp','ngMap'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -32,5 +32,4 @@ angular.module('myApp.view1', ['ngRoute','ngResource','myApp'])
 }])
 .controller('SingleCtrl', ['$scope','Office','$routeParams',function ($scope, Office, $routeParams) {
     $scope.office = Office.get({ id: $routeParams.id });
-
 }]);
