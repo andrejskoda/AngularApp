@@ -1,0 +1,19 @@
+<p><input type="search" class="form-control" placeholder="Search" ng-model="query"></p>
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th ng-click="sort()">
+                Address
+                <span ng-show='!sort.order' class='glyphicon glyphicon-chevron-down'></span>
+                <span ng-show='sort.order' class='glyphicon glyphicon-chevron-up'></span>
+            </th>
+        </tr>
+    </thead>
+    <tr ng-repeat="office in offices | filter:query | orderBy:sort.field:sort.order" ng-click='show(office.DisKz)'>
+        <td> {{ office['DisNameLang']}} </td>
+        <td> {{ office['DisPlz']}} - {{ office['DisOrt']}} </td>
+    </tr>
+</table>
